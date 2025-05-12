@@ -14,10 +14,10 @@ fun main(args: Array<String>) {
 
 fun initDatabase() {
     Database.connect(
-        url = "jdbc:postgresql://localhost:5432/cuberush",
+        url = "jdbc:postgresql://dpg-d0h6f1re5dus73bcl980-a.frankfurt-postgres.render.com/cuberush?ssl=false",
         driver = "org.postgresql.Driver",
-        user = "postgres",
-        password = "anatolij"
+        user = "cuberush_user",
+        password = "nIEmbhuKFEG6w1Ugqu7XSRLrfngTQxBF"
     )
     transaction {
         SchemaUtils.create(SolvesTable)

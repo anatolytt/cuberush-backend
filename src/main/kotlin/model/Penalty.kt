@@ -5,11 +5,4 @@ enum class Penalty {
     NONE,
     PLUS2;
 
-    fun getIntFromPenalty() : Int {
-        return when(this) {
-            DNF -> 0
-            PLUS2 -> 1
-            NONE -> 2
-        }
-    }
 }

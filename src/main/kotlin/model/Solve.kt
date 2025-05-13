@@ -6,7 +6,8 @@ import kotlinx.serialization.Serializable
 data class Solve(
     val result: Int,
     val scramble: String,
-    val penalty: Int,
+    val penalty: Penalty,
     val comment: String = "",
-    val date: String
+    val date: String,
+    val event: Events
 )

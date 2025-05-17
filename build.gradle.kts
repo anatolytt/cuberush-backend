@@ -16,6 +16,12 @@ repositories {
     mavenCentral()
 }
 
+ktor {
+    fatJar {
+        archiveFileName.set("cuberush.jar")
+    }
+}
+
 dependencies {
     implementation(libs.ktor.server.call.logging)
     implementation(libs.ktor.server.content.negotiation)

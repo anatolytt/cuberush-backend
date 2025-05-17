@@ -1,7 +1,5 @@
 
 plugins {
-    id("com.github.johnrengelman.shadow") version "8.1.1"  // Актуальная версия
-    kotlin("jvm") version "1.9.0"  // Убедитесь, что версия Kotlin совместима
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
     alias(libs.plugins.kotlin.plugin.serialization)

@@ -51,5 +51,20 @@ fun Application.configureRouting() {
             }
 
         }
+
+        get("/.well-known/assetlinks.json") {
+            call.respondText(
+                text = """[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.cubetime",
+    "sha256_cert_fingerprints":
+    ["BF:67:AB:A2:87:C9:3C:AF:E9:72:8B:FB:19:BA:64:65:23:47:36:47:B1:48:36:3E:94:67:52:AB:31:FC:CF:70"]
+  }
+}]""",
+                contentType = ContentType.Application.Json
+            )
+        }
     }
 }
